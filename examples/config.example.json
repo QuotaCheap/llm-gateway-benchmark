@@ -1,0 +1,20 @@
+{
+  "runs": 3,
+  "timeoutMs": 30000,
+  "gateways": [
+    {
+      "name": "quotacheap",
+      "baseUrl": "https://api.quota.cheap/v1",
+      "apiKeyEnv": "QUOTACHEAP_API_KEY",
+      "model": "gpt-5.4-mini"
+    }
+  ],
+  "scenarios": [
+    {
+      "name": "short-answer",
+      "messages": [
+        { "role": "user", "content": "Explain API gateway observability in one sentence." }
+      ]
+    }
+  ]
+}
